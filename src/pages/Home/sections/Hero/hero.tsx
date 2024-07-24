@@ -16,6 +16,13 @@ const Hero = () => {
     height: "100vh",
     display:"flex",
     alignItems:"center",
+    [theme.breakpoints.up("xs")]:{
+      
+      paddingTop:"100px",
+    },
+    [theme.breakpoints.up("md")]:{
+      paddingTop:"0",
+    }
   }));
   const StyledImg = styled("img")(({theme}) => ({
     width: "80%",
@@ -40,23 +47,23 @@ const Hero = () => {
               
             </Grid>
             <Grid item xs={12} md={7}>
-              <Typography color="primary.light" variant="h1" textAlign="center">
+              <Typography color="primary.light" variant="h1" textAlign="center"pb={2}>
                 Juno Cristian
               </Typography>
-              <Typography color="secondary.light" variant="h2" textAlign="center" paddingBottom={3}>
+              <Typography color="secondary.light" variant="h2" textAlign="center" >
                 Welcome My Friend
               </Typography>
 
-              <Grid container display="flex" justifyContent="center" spacing={3}>
-                <Grid item xs={12} md={4} display="flex" justifyContent="center">   
-                  <StyledButton>
+              <Grid container display="flex" justifyContent="center" spacing={3}pt={3}>
+                <Grid item xs={12} md={4} display="flex" justifyContent="center"  >   
+                  <StyledButton onClick={()=> console.log("download")}>
                     <SimCardDownloadIcon />
                     <Typography>Download CV</Typography>
                   </StyledButton>
                 </Grid>
 
                 <Grid item xs={12} md={4} display="flex" justifyContent="center">
-                  <StyledButton>
+                  <StyledButton onClick={onclick}>
                     <EmailIcon />
                     <Typography>
                       Contact me
