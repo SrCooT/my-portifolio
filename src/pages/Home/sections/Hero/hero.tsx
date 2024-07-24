@@ -15,7 +15,6 @@ const Hero = () => {
     backgroundColor: theme.palette.primary.main,
     height: "100vh",
     display:"flex",
-    justifyContent:"center",
     alignItems:"center",
   }));
   const StyledImg = styled("img")(({theme}) => ({
@@ -35,8 +34,7 @@ const Hero = () => {
                     <AnimatedBackground />
                   </Box>
               </Box>
-              <Box position="absolute" textAlign={"center"}>
-
+              <Box position="relative" textAlign={"center"}>
               <StyledImg src={Avatar} />
               </Box>
               
@@ -45,7 +43,7 @@ const Hero = () => {
               <Typography color="primary.light" variant="h1" textAlign="center">
                 Juno Cristian
               </Typography>
-              <Typography color="secondary.light" variant="h2" textAlign="center">
+              <Typography color="secondary.light" variant="h2" textAlign="center" paddingBottom={3}>
                 Welcome My Friend
               </Typography>
 
@@ -54,7 +52,6 @@ const Hero = () => {
                   <StyledButton>
                     <SimCardDownloadIcon />
                     <Typography>Download CV</Typography>
-
                   </StyledButton>
                 </Grid>
 
