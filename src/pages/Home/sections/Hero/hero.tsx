@@ -1,32 +1,76 @@
-import { styled } from "@mui/material";
+import { Box, styled } from "@mui/material";
 import Avatar from "../../../../assets/img/avatar.png.jpg";
-import  Grid  from "@mui/material/Grid";
-import { Container } from "react";
+import Grid from "@mui/material/Grid";
+import { Container } from "@mui/material";
+import { Typography } from "@mui/material";
+import SimCardDownloadIcon from "@mui/icons-material/SimCardDownload";
+import EmailIcon from "@mui/icons-material/Email";
+import StyledButton from "../../../../components/StyleButton/StyledButton";
+import { AnimatedBackground } from "../../../../components/AnimatedBackground/animatedBackground";
+
 
 
 const Hero = () => {
-  const StyledHero = styled("div")(() => ({
-    backgroundColor: "black",
+  const StyledHero = styled("div")(({theme}) => ({
+    backgroundColor: theme.palette.primary.main,
+    height: "100vh",
+    display:"flex",
+    justifyContent:"center",
+    alignItems:"center",
   }));
-  const StyledImg = styled("img")(() => ({
-    width: "30%",
+  const StyledImg = styled("img")(({theme}) => ({
+    width: "80%",
     borderRadius: "50%",
+    border:`1px solid ${theme.palette.primary.contrastText}`
   }));
 
   return (
     <>
       <StyledHero>
-        <Container>
-            <Grid container spacing={2}>
-                < Grid item xs={4}>
-                <StyledImg src={Avatar} />
+        <Container maxWidth="lg">
+          <Grid container spacing={2}>
+            <Grid item xs={12} md={5}>
+              <Box position="relative">
+                  <Box position="absolute" width={"150%"} top={-100} right={0}  >
+                    <AnimatedBackground />
+                  </Box>
+              </Box>
+              <Box position="absolute" textAlign={"center"}>
+
+              <StyledImg src={Avatar} />
+              </Box>
+              
+            </Grid>
+            <Grid item xs={12} md={7}>
+              <Typography color="primary.light" variant="h1" textAlign="center">
+                Juno Cristian
+              </Typography>
+              <Typography color="secondary.light" variant="h2" textAlign="center">
+                Welcome My Friend
+              </Typography>
+
+              <Grid container display="flex" justifyContent="center" spacing={3}>
+                <Grid item xs={12} md={4} display="flex" justifyContent="center">   
+                  <StyledButton>
+                    <SimCardDownloadIcon />
+                    <Typography>Download CV</Typography>
+
+                  </StyledButton>
                 </Grid>
-                <Grid item xs={8}>
-                <Typography color="primary">Juno Cristian</Typography>
+
+                <Grid item xs={12} md={4} display="flex" justifyContent="center">
+                  <StyledButton>
+                    <EmailIcon />
+                    <Typography>
+                      Contact me
+                    </Typography>
+                  </StyledButton>
                 </Grid>
-            </Grid>    
+              </Grid>
+            </Grid>
+          </Grid>
         </Container>
-        </StyledHero>
+      </StyledHero>
     </>
   );
 };
