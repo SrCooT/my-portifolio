@@ -1,4 +1,5 @@
 import { AppBar, MenuItem, styled, Toolbar } from "@mui/material"
+import React from "react";
 
 
 const NavBar = () => {
@@ -7,7 +8,7 @@ const NavBar = () => {
     justifyContent:"space-evenly",
   }));
 
-   
+  
     return (
       <>
           <AppBar position="absolute">
