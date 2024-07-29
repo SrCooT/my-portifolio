@@ -1,5 +1,7 @@
 import { Container, Grid, styled, Typography } from "@mui/material";
 import React from "react";
+import "./about.css"
+
 
 const About = () => {
     const StyledAbout = styled("div")(({ theme }) => ({
@@ -19,7 +21,7 @@ const About = () => {
     return (
         <>
         <StyledAbout>
-        <Container maxWidth="lg">
+        <Container maxWidth="lg" className="container">
         <Grid container display="flex" justifyContent="center" >
             <Grid item xs={12} md={7}>
             <Typography color="primary.dark" variant="h1" textAlign="center">
