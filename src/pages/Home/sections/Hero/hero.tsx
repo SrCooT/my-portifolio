@@ -60,7 +60,7 @@ function Hero() {
                 variant="h2"
                 textAlign="center"
                 color="secondary.dark">
-                  Welcome My Friend
+                  Welcome My Friends
 
                 
               </Typography>

@@ -3,7 +3,7 @@ import React from "react";
 
 
 const About = () => {
-  const StyledAbout = styled("div")(({ theme }) => ({
+    const StyledAbout = styled("div")(({ theme }) => ({
     backgroundColor: theme.palette.secondary.main,
     display: "flex",
     alignItems: "center",
@@ -15,9 +15,9 @@ const About = () => {
     [theme.breakpoints.up("md")]: {
     paddingTop: "0",
     },
-  }));
+    }));
 
-  return (
+    return (
     <>
     <StyledAbout>
     <Container maxWidth="lg" >
