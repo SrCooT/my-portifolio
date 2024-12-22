@@ -9,8 +9,6 @@ import React from "react";
 import StyledButton from "./../../../../components/StyledButton/StyledButton";
 import avatar from "../../../../assets/img/avatar.jpg";
 
-
-
 function Hero() {
   const StyledHero = styled("div")(({ theme }) => ({
     backgroundColor: theme.palette.primary.main,
@@ -29,7 +27,6 @@ function Hero() {
     borderRadius: "50%",
     border: `1px solid ${theme.palette.primary.contrastText}`,
   }));
-
 
   return (
     <>
@@ -56,15 +53,14 @@ function Hero() {
                 Juno Cristian
               </Typography>
 
-                <Typography
+              <Typography
                 variant="h2"
                 textAlign="center"
-                color="secondary.dark">
-                  Welcome My Friends
-
-                
+                color="secondary.dark"
+              >
+                Welcome My Friends
               </Typography>
-                
+
               <Grid
                 container
                 display="flex"
@@ -78,10 +74,12 @@ function Hero() {
                   md={4}
                   display="flex"
                   justifyContent="center"
+                  
                 >
                   <StyledButton onClick={() => console.log("download")}>
                     <SimCardDownloadIcon />
-                    <Typography>Download CV</Typography>
+                    <a href="/src/assets/pdfs/Juno Cristian Meireles Virgínia desenvolvedor.pdf" target="blank"><Typography>Download CV</Typography></a>
+                    
                   </StyledButton>
                 </Grid>
 
@@ -94,7 +92,7 @@ function Hero() {
                 >
                   <StyledButton onClick={() => console.log("download")}>
                     <EmailIcon />
-                    <Typography>Contact me</Typography>
+                   <a href="https://www.linkedin.com/in/juno-cristian/" target="_blank" rel="noopener noreferrer"><Typography>Contact me</Typography></a> 
                   </StyledButton>
                 </Grid>
               </Grid>

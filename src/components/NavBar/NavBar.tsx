@@ -1,28 +1,26 @@
-import { AppBar, MenuItem, styled, Toolbar } from "@mui/material"
 import React from "react";
+import { AppBar, MenuItem, styled, Toolbar } from "@mui/material";
+import { Link } from "react-router-dom";
+
 
 
 const NavBar = () => {
-  const StyledTooBar = styled(Toolbar)(() => ({
-    display:"flex",
-    justifyContent:"space-evenly",
+  const StyledToolBar = styled(Toolbar)(() => ({
+    display: "flex",
+    justifyContent: "space-evenly",
+    alignItems: "center",
   }));
 
-  
-    return (
-      <>
-          <AppBar position="absolute">
-            <StyledTooBar>
-            <MenuItem>About</MenuItem>
-            <MenuItem>skills</MenuItem>
-            <MenuItem>Projects</MenuItem>
-            </StyledTooBar>
-            </AppBar>
-        
-      </>
-    )
-  }
-  
-  export default NavBar
+  return (
+    <AppBar position="sticky" color="primary">
+      <StyledToolBar>
+        <MenuItem component={Link} to="/">Home Page</MenuItem>
+        <MenuItem component={Link} to="/About">About</MenuItem>
+        <MenuItem component={Link} to="/skills">Skills</MenuItem>
+        <MenuItem component={Link} to="/projects">Projects</MenuItem>
+      </StyledToolBar>
+    </AppBar>
+  );
+};
 
-  
+export default NavBar;
