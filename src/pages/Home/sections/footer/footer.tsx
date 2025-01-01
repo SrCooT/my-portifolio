@@ -27,8 +27,8 @@ const Footer: React.FC = () => {
                     <LinkedIn />
                 </IconButton>
             </Box>
-            <Typography variant="body2" color="textSecondary">
-                Obrigado por visitar CooT Agradece!
+            <Typography variant="body2" color="textPrimary">
+                CooT Agradece por visitar !
             </Typography>
         </Box>
     );
