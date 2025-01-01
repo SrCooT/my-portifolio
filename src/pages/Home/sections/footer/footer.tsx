@@ -10,7 +10,7 @@ const Footer: React.FC = () => {
                 display: 'flex',
                 flexDirection: 'column',
                 alignItems: 'center',
-                padding: '16px',
+                padding: '15px',
                 backgroundColor: '#f8f8f8',
                 borderTop: '1px solid #e7e7e7',
                 marginTop: 'auto',
