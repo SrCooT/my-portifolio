@@ -1,4 +1,5 @@
-# Hello Welcome readme
+### Hello Welcome readme
+
 ## About the Project
 
 This is my personal portfolio website where I showcase my skills, projects, and experiences. It is built using modern web technologies and designed to be responsive and visually appealing.
@@ -16,8 +17,8 @@ This is my personal portfolio website where I showcase my skills, projects, and 
 - CSS
 - JavaScript
 - React
--TypeScript
--Material-UI(mui)
+- TypeScript
+- Material-UI(mui)
 
 ## Getting Started
 
@@ -31,7 +32,7 @@ Make sure you have npm installed on your machine.
 
 1. Clone the repo
   ```sh
-  git clone https://github.com/your-username/your-repo.git
+  git clone https://github.com/SrCooT/my-portifolio
   ```
 2. Install NPM packages
   ```sh
