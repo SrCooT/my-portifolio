@@ -28,7 +28,7 @@ const Footer: React.FC = () => {
                 </IconButton>
             </Box>
             <Typography variant="body2" color="textPrimary">
-                CooT Agradece por visitar !
+                CooT Agradece pela visita !
             </Typography>
         </Box>
     );
