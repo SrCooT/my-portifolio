@@ -4,6 +4,7 @@ import About from "./sections/About/about";
 import Skills from "./sections/Skills/skills";
 import Certificados from "./sections/Certficados/certificados";
 import Projetos from './sections/projetos/projects';
+import Footer from "./sections/footer/footer";
 
 
 const Home = () => {
@@ -14,6 +15,7 @@ const Home = () => {
       <Skills/>
       <Certificados />
       <Projetos/>
+      <Footer/>
     </>
   );
 };
